@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="320dp">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        app:cardCornerRadius="10dp"
+        android:elevation="3dp"
+        android:layout_margin="5dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tv_gadapter_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:src="@drawable/ic_moren_goods"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.5"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_gadapter_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_alignParentBottom="true"
+                                android:text="商品名"
+                                android:textColor="@color/Black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv_gadapter_symbol1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="¥ "
+                                android:textSize="15sp"
+                                android:textColor="@color/colorRed"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_gadapter_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorRed"
+                                android:layout_centerVertical="true"
+                                android:textStyle="bold"
+                                android:layout_toRightOf="@+id/tv_gadapter_symbol1"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_gadapter_hownew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="九成新"
+                            android:textSize="10sp"
+                            android:textColor="@color/colorRed"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="2dp"
+                            android:background="@drawable/hownew_label_bg"/>
+
+                        <TextView
+                            android:id="@+id/tv_gadapter_getway"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="邮寄"
+                            android:textSize="10sp"
+                            android:textColor="@color/Green"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_below="@+id/tv_gadapter_hownew"
+                            android:layout_marginTop="5dp"
+                            android:padding="2dp"
+                            android:background="@drawable/getway_label_bg"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hui"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5">
+
+                    <ImageView
+                        android:id="@+id/iv_gadapter_headphoto"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/moren_headphoto"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/tv_gadapter_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昵称"
+                        android:textSize="12sp"
+                        android:textColor="@color/Black"
+                        android:textStyle="bold"
+                        android:layout_toRightOf="@+id/iv_gadapter_headphoto"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_gadapter_repu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="信用优秀"
+                        android:textSize="8sp"
+                        android:textColor="@color/btn_answer_normal"
+                        android:layout_below="@+id/tv_gadapter_nickname"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_gadapter_headphoto"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

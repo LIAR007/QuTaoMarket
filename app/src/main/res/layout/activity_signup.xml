@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".contoller.activity.SignupActivity">
+
+    <TextView
+        android:id="@+id/tv_signup_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="注册"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_signup_text"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账        号:"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_signup_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="6-18位数字或小写字母组合"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tx_signup_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="* 账号至少为6位！"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密        码:"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_signup_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="6-18位数字或小写字母组合"
+                    android:textSize="15sp"
+                    android:password="true"/>
+
+                <TextView
+                    android:id="@+id/tx_signup_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="* 密码不能少于6位！"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重复密码:"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_signup_repwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="重复上面的密码"
+                    android:textSize="15sp"
+                    android:password="true"/>
+
+                <TextView
+                    android:id="@+id/tx_signup_repwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="* 密码不一致！"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵        称:"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_signup_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="输入昵称"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tx_signup_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="* 昵称不能为空！"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性        别:"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <RadioGroup
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/rb_signup_man"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="男"/>
+                <RadioButton
+                    android:id="@+id/rb_signup_woman"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="女"
+                    android:layout_marginLeft="50dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话:"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_signup_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="请输入手机号码"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tx_signup_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:text="* 手机号码不能为空！"
+                    android:textColor="@color/colorRed"
+                    android:textSize="12sp"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_signup_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我要注册"
+                android:textSize="20sp"
+                android:textColor="@color/Green"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tv_signup_tologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已有账号？返回登录"
+                android:textSize="11sp"
+                android:textColor="@color/colorRed"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

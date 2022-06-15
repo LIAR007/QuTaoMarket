@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contoller.activity.MybuyActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_mybuy_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/iv_mybuy_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_arrowleft_white_foreground"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_mybuy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我买到的"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_mybuy_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:background="@color/hui"
+        android:layout_below="@+id/rl_mybuy_title"/>
+
+</RelativeLayout>

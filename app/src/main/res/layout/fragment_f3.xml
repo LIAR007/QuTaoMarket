@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contoller.fragment.F3Fragment"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="发布"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:fitsSystemWindows="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_f3_publish"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ll_selector_white"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv_f3_image1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/f3_xianzhi"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="发布闲置"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_f3_image1"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_f5_arrowright_foreground"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_f3_free"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:background="@drawable/ll_selector_white"-->
+<!--            android:clickable="true">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_f3_image2"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/f3_free"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="发布免费送"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/Black"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_toRightOf="@+id/iv_f3_image2"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/ic_f5_arrowright_foreground"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="20dp"/>-->
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/rl_f3_buy"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ll_selector_white"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv_f3_image3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/f3_buy"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="发布求购"
+                android:textSize="15sp"
+                android:textColor="@color/Black"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/iv_f3_image3"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_f5_arrowright_foreground"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_f3_charity"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:background="@drawable/ll_selector_white"-->
+<!--            android:clickable="true">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_f3_image4"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/f3_charity"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="发起公益"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/Black"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_toRightOf="@+id/iv_f3_image4"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/ic_f5_arrowright_foreground"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="20dp"/>-->
+
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_f3_auction"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:background="@drawable/ll_selector_white"-->
+<!--            android:clickable="true">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_f3_image5"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/f3_paimai"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="发布拍卖"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textColor="@color/Black"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_toRightOf="@+id/iv_f3_image5"-->
+<!--                android:layout_centerVertical="true"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:src="@drawable/ic_f5_arrowright_foreground"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="20dp"/>-->
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+</FrameLayout>

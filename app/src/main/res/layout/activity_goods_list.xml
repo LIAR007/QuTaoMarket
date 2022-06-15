@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contoller.activity.GoodsListActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_goodslist_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/iv_goodslist_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_arrowleft_white_foreground"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_goodslist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品列表"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_goodslist_first"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rl_goodslist_title">
+        <LinearLayout
+            android:id="@+id/ll_goodslist_moren"
+            android:clickable="true"
+            android:background="@drawable/ll_selector_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_goodslist_morentext"
+                android:textColor="@color/Black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="默认"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_goodslist_renqi"
+            android:clickable="true"
+            android:background="@drawable/ll_selector_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_goodslist_renqitext"
+                android:textColor="@color/Black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="人气"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_goodslist_time"
+            android:clickable="true"
+            android:background="@drawable/ll_selector_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_goodslist_timetext"
+                android:textColor="@color/Black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="时间"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_goodslist_lprice"
+            android:clickable="true"
+            android:background="@drawable/ll_selector_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_goodslist_lpricetext"
+                android:textColor="@color/Black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="价格低"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_goodslist_hprice"
+            android:clickable="true"
+            android:background="@drawable/ll_selector_white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_goodslist_hpricetext"
+                android:textColor="@color/Black"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="价格高"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_goodslist_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_goodslist_first"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:background="@color/hui">
+    </ListView>
+
+</RelativeLayout>

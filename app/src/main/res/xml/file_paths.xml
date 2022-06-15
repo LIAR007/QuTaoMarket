@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path path="Android/data/com/hyphenate/chatuidemo/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+    <external-path name="picture" path="DCIM"/>
+    <external-path name="image" path="."/>
+    <external-files-path name="cropImg" path="." />
+    <root-path path="root_path" name="." />
+</paths>

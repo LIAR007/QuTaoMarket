@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name" translatable="false">趣淘</string>
+    <string name="burl" translatable="false">http://10.34.52.44:8080/QuTaoApplication/</string>
+    //阿里云服务器IP 47.106.119.68:8080
+    //测试IP 103.46.128.41:35932
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+</resources>

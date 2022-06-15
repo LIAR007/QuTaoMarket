@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/iv_choosearea_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_arrowleft_white_foreground"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_choosearea_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pubaddress_curlocation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:background="@drawable/ll_selector_white">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_location_foreground"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前定位"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"/>
+
+        <TextView
+            android:id="@+id/tv_choosearea_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京市海淀区"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hui"/>
+
+    <ListView
+        android:id="@+id/lv_choosearea_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

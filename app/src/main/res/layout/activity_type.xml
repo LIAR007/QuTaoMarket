@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contoller.activity.TypeActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/iv_type_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_arrowleft_white_foreground"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品分类"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_type_hot"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/cardview_light_background"
+        app:cardCornerRadius="20dp"
+        android:elevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_hotclass"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热门分类"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorRed"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hui"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_type_gameclass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/ll_selector_white">
+
+                    <TextView
+                        android:id="@+id/tv_top2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOP2"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_game"
+                        android:layout_below="@+id/tv_top2"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="游戏装备"
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_type_phoneclass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/ll_selector_white">
+
+                    <TextView
+                        android:id="@+id/tv_top1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOP1"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15sp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/ic_phone"
+                        android:layout_below="@+id/tv_top1"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机数码"
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_type_dailyclass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:background="@drawable/ll_selector_white">
+
+                    <TextView
+                        android:id="@+id/tv_top3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOP3"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_dailygoods"
+                        android:layout_below="@+id/tv_top3"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生活百货"
+                        android:textSize="12sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cv_type_hot"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_type_elecclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_homeelec"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家用电器"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电视 冰箱 洗衣机"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext1"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hui"/>
+
+            <LinearLayout
+                android:id="@+id/ll_type_sportsclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_sportsclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="运动户外"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="篮球 足球"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext2"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hui"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_type_cloclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_clothesclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服饰配件"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女装 男装 鞋子"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext3"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hui"/>
+
+            <LinearLayout
+                android:id="@+id/ll_type_bookclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_bookclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="二手图书"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经济 文学 童书"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext4"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hui"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_type_toyclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_toyclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="儿童玩具"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="童车 早教玩具"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext5"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hui"/>
+
+            <LinearLayout
+                android:id="@+id/ll_type_beautyclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_beautyclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="美妆"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="美容护肤 彩妆 香水"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext6"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hui"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_type_farmclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_farmclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="园艺农用"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="园艺植物 农用物资"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext7"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hui"/>
+
+            <LinearLayout
+                android:id="@+id/ll_type_fitclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_fitclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="健身器材"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跑步机 沙袋 瑜伽圈"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext8"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/hui"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_type_backclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_backclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="箱包"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="旅行箱 双肩包 卡包"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext9"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/hui"/>
+
+            <LinearLayout
+                android:id="@+id/ll_type_otherclass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/ll_selector_white">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_otherclass"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_classtext10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他商品"
+                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="车品 家具 饰品"
+                        android:textSize="12sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tv_classtext10"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
